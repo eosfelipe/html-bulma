@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <style>
+        .py-1 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .pb-1 {
+            padding-bottom: 10px;
+        }
+
+        .special-text {
+            line-height: 2;
+        }
+
+        .navbar.has-shadow {
+            box-shadow: 0px 0px 20px 0px rgba(10, 10, 10, 0.2);
+        }
+
+        #hero {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            background: #f5f8fd url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0h2v20H9V0zm25.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm-20 20l1.732 1-10 17.32-1.732-1 10-17.32zM58.16 4.134l1 1.732-17.32 10-1-1.732 17.32-10zm-40 40l1 1.732-17.32 10-1-1.732 17.32-10zM80 9v2H60V9h20zM20 69v2H0v-2h20zm79.32-55l-1 1.732-17.32-10L82 4l17.32 10zm-80 80l-1 1.732-17.32-10L2 84l17.32 10zm96.546-75.84l-1.732 1-10-17.32 1.732-1 10 17.32zm-100 100l-1.732 1-10-17.32 1.732-1 10 17.32zM38.16 24.134l1 1.732-17.32 10-1-1.732 17.32-10zM60 29v2H40v-2h20zm19.32 5l-1 1.732-17.32-10L62 24l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM111 40h-2V20h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zM40 49v2H20v-2h20zm19.32 5l-1 1.732-17.32-10L42 44l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM91 60h-2V40h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM39.32 74l-1 1.732-17.32-10L22 64l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM71 80h-2V60h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM120 89v2h-20v-2h20zm-84.134 9.16l-1.732 1-10-17.32 1.732-1 10 17.32zM51 100h-2V80h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM100 109v2H80v-2h20zm19.32 5l-1 1.732-17.32-10 1-1.732 17.32 10zM31 120h-2v-20h2v20z' fill='%23ff7bd4' fill-opacity='0.10' fill-rule='evenodd'/%3E%3C/svg%3E") center top no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="header">
+        <nav class="navbar is-light is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+                </a>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item">
+                        Home
+                    </a>
+
+                    <a class="navbar-item">
+                        Documentation
+                    </a>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            More
+                        </a>
+
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item">
+                                About
+                            </a>
+                            <a class="navbar-item">
+                                Jobs
+                            </a>
+                            <a class="navbar-item">
+                                Contact
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item">
+                                Report an issue
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-primary">
+                                Sign up
+                            </a>
+                            <a class="button is-light">
+                                Log in
+                            </a>
+                            <a href="#" class="button is-light">
+                                <span class="icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </span>
+                            </a>
+                            <a href="#" class="button is-light">
+                                <span class="icon">
+                                    <i class="fab fa-instagram"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section id="hero" class="section hero is-light is-fullheight">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="columns is-desktop is-fluid">
+                    <div class="column is-6">
+                        <h2 class="is-size-1">Solutions for Your <span class="has-text-primary">Body!</span></h2>
+                        <p class="is-size-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, cum?</p>
+                        <br>
+                        <button class="button is-primary is-outlined is-large">Get Started</button>
+                    </div>
+                    <div class="column is-6">
+                        <img src="img/undraw_diet_ghvw.svg" alt="diet">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero is-primary is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Primary bold title
+                </h1>
+                <h2 class="subtitle has-text-justified">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt accusamus, ratione facilis libero
+                    fugiat totam possimus atque quia, reprehenderit repudiandae laboriosam, recusandae debitis
+                    reiciendis eum eos. Ipsam quae deserunt reiciendis!
+                </h2>
+                <button class="button is-light is-outlined is-large is-pulled-right">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section footer">
+        <div class="container">
+            <div class="columns is-desktop is-fluid">
+                <div class="column is-3">
+                    <h3 class="is-size-3 py-1">Bulma</h3>
+                    <p class="special-text is-italic has-text-weight-light">Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Ab doloremque quaerat optio beatae cum ratione autem quo corporis tenetur qui,
+                        eum sunt dolor dicta odio, sint esse, recusandae minus totam?</p>
+                    <h3 class="is-size-4 py-1">
+                        Our Newsletter
+                    </h3>
+                    <form action="" method="POST">
+                        <div class="field is-grouped">
+                            <p class="control is-expanded">
+                                <input name="newsletter" class="input is-primary is-small type="email"
+                                    placeholder="example@domain.com" required>
+                            </p>
+                            <p class="control">
+                                <button class="button is-primary is-outlined is-small">Send</button>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+                <div class="column is-3">
+                    <h3 class="is-size-4 py-1">
+                        Useful Links
+                    </h3>
+                    <ul class="menu-list">
+                        <li><a class="has-text-primary" href="#">Payments</a></li>
+                        <li><a class="has-text-primary" href="#">Terms of service</a></li>
+                        <li><a class="has-text-primary" href="#">Privacy policy</a></li>
+                    </ul>
+                    <h3 class="is-size-4 py-1">
+                        Contact Us
+                    </h3>
+                    <p>
+                        address 123 country <br>
+                        <strong>Phone: </strong>1234567890 <br>
+                        <strong>Email: </strong>info@example.com
+                    </p>
+                </div>
+                <div class="column is-6">
+                    <h3 class="is-size-4 py-1">Send us a message</h3>
+                    <p class="pb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ea cupiditate, illum
+                        quaerat dicta quidem repudiandae iusto suscipit? Non eum velit at rerum nulla molestiae
+                        laudantium aperiam soluta aspernatur nostrum!</p>
+                    <form action="" method="POST">
+                        <div class="field">
+                            <div class="control has-icons-left has-icons-right">
+                                <input name="name" class="input is-primary" type="text" placeholder="Your Name">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                                <span class="icon is-small is-right">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                            </div>
+                            <p class="help is-danger">This name is invalid</p>
+                        </div>
+                        <div class="field">
+                            <div class="control has-icons-left has-icons-right">
+                                <input name="email" class="input is-primary" type="email" placeholder="Your Email">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                                <span class="icon is-small is-right">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                            </div>
+                            <p class="help is-danger">This email is invalid</p>
+                        </div>
+                        <div class="field"></div>
+                        <div class="field">
+                            <div class="control has-icons-left has-icons-right">
+                                <input name="subject" class="input is-primary" type="text" placeholder="Your Subject">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-sticky-note"></i>
+                                </span>
+                                <span class="icon is-small is-right">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                            </div>
+                            <p class="help is-danger">This subject is invalid</p>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <textarea class="textarea" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="field is-pulled-right">
+                            <div class="control">
+                                <button class="button is-primary is-outlined">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is
+                licensed
+                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. &copy; <span id="ano"></span>
+                Todos los derechos reservados.
+            </p>
+            <a href="https://bulma.io">
+                <img src="https://bulma.io/images/made-with-bulma--semiblack.png" alt="Made with Bulma" width="128"
+                    height="24">
+            </a>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            const ano = document.getElementById('ano');
+            ano.innerHTML = new Date().getFullYear();
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+                // Add a click event on each of them
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+
+                        // Get the target from the "data-target" attribute
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+
+                    });
+                });
+            }
+
+        });
+    </script>
+</body>
+
+</html>

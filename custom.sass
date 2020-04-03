@@ -1,0 +1,22 @@
+// 1. Import the initial variables
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+@import "./sass/utilities/initial-variables";
+@import "./sass/utilities/functions";
+
+// 2. Set your own initial variables
+// Add pink and its invert
+$pink: #ff7bd4;
+$pink-invert: #E10098;
+// Add a sans serif family
+$family-sans-serif: BlinkMacSystemFont, -apple-system, 'Signika', "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $pink;
+$primary-invert: findColorInvert($primary);
+
+// Use the new serif family
+$family-primary: $family-sans-serif;
+
+// 6. Import the rest of Bulma
+@import "./bulma";
